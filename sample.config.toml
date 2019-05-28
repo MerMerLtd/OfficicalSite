@@ -1,0 +1,19 @@
+# CafecaBackend Default Config
+
+title = "CafecaBackend"
+
+[base]
+folder = "MerMer-framework"
+static = "./build/frontend/"
+debug = false
+
+[blockchain]
+type = "ethereum"
+
+[database]
+type = "firebase"
+
+[api]
+pathname = [
+  "get | /,/version | Static.Utils.readPackageInfo"
+]
