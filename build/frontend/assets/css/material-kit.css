@@ -15671,4 +15671,7 @@ html {
   font-size: 10rem;
   color: #fff; }
 
+.btn-contactus, .disable {
+  cursor: not-allowed; }
+
 /*# sourceMappingURL=material-kit.css.map */

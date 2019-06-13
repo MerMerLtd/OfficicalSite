@@ -237,4 +237,44 @@ const countdown = (el, time) => {
     intervalId = setInterval(interval, 1000, timerTime);
 }
 
+const elements = {
+    btnContactUs: document.querySelector(".btn-contactus"),
+    inputFristName: document.querySelectorAll("input[name=name]")[0],
+    inputLastName: document.querySelectorAll("input[name=name]")[1],
+    inputEmail: document.querySelector("input[type=email]"),
+    inputMessage: document.querySelector("textarea[name=message]"),
+    inputCheckbox: document.querySelector("input[type=checkbox]"),
+};
+const contactUs = evt => {
+    evt.preventDefault();
+    if (!elements.inputCheckbox.checked) return;
 
+    const opts = {
+        contentType: 'application/json',
+        method: "POST",
+        // url: ``,
+        payload: {
+            firstName: elements.inputFristName.value,
+            lastName: elements.inputLastName.value,
+            email: elements.inputEmail.value,
+            message: elements.inputMessage.value,
+        },
+    }
+
+    let err, data;
+    [err, data] = await to(makeRequest(opts));
+    if (err) {
+        console.log(err)
+        // throw new Error(err)
+    }
+    if (data) {
+        console.log(data);
+        return;
+    }
+}
+
+elements.inputCheckbox.addEventListener("change", () => {
+    if (!elements.inputCheckbox.checked) elements.btnContactUs.classList.add("disabled");
+    if (!!elements.inputCheckbox.checked) elements.btnContactUs.classList.remove("disabled");
+}, false);
+elements.btnContactUs.addEventListener("click", evt => contactUs(evt), false);
