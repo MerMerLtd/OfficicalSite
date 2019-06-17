@@ -1,30 +1,6 @@
 {
-  "_from": "mermer",
-  "_id": "mermer@0.1.5",
-  "_inBundle": false,
-  "_integrity": "sha512-orsRQSxyOu778mBCY9MAgn6+dxno9I1extF2Mg3zF9mx+9snnyiZ3jQ8I1rwe2G/+szla83S3EnMzIoTCz8Cdg==",
-  "_location": "/mermer",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "mermer",
-    "name": "mermer",
-    "escapedName": "mermer",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/mermer/-/mermer-0.1.5.tgz",
-  "_shasum": "7990abb3c12aea53ef43efe1d77537699c889ec6",
-  "_spec": "mermer",
-  "_where": "/Users/hazelliang",
   "author": {
-    "name": "MerMer Ltd."
+    "name": "MerMer Co. Ltd."
   },
   "bin": {
     "mermer": "bin/main.js"
@@ -50,7 +26,7 @@
     "toml": "^3.0.0"
   },
   "deprecated": false,
-  "description": "MerMer Framework for Front End and Back End",
+  "description": "MerMer Co. Ltd. Officail Site",
   "devDependencies": {
     "@babel/core": "^7.3.3",
     "babel-loader": "^8.0.5",
@@ -62,7 +38,7 @@
     "webpack-cli": "^3.2.3",
     "webpack-dev-server": "^3.2.0"
   },
-  "homepage": "https://github.com/MerMerLtd/MerMer-framework#readme",
+  "homepage": "https://github.com/MerMerLtd/MerMerOfficial#readme",
   "keywords": [
     "frontend",
     "backend",
@@ -73,7 +49,7 @@
   "name": "mermer",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MerMerLtd/MerMer-framework.git"
+    "url": "git+https://github.com/MerMerLtd/MerMerOfficial.git"
   },
   "scripts": {
     "dev": "webpack-dev-server --mode development --open 'google chrome'",
